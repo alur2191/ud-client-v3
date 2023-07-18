@@ -1,0 +1,223 @@
+@import './globals.scss';
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+p, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+main {  
+  margin-top: 80px;
+  flex: 1 0 auto;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+	line-height: 1;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+h1 {
+  font-size: $f1;
+}
+
+h2 {
+  font-size: $f2;
+}
+
+h3 {
+  font-size: $f3;
+}
+
+h4 {
+  font-size: $f4;
+}
+
+p {
+  font-size: $f5;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 10px 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+}
+
+pre {
+  font-family: Consolas,"courier new";
+  color: white;
+  background-color: #333333;
+	border-radius: 5px;
+  padding: 15px;
+}
+
+#border_type1 {
+  position: absolute;
+  margin-left: $space-sm;
+  border: 1px solid crimson;
+  border-radius: 45% 55% 62% 38% / 41% 44% 56% 60%;
+  height: 200px;
+  width: 200px;
+  z-index: -1;
+}
+
+#image_type1 {
+  background-image: url('https://images.unsplash.com/photo-1589729132389-8f0e0b55b91e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+  background-position: cover;
+  background-size: cover;
+  border-radius: 45% 55% 62% 38% / 41% 44% 56% 60%;
+  height: 200px;
+  width: 200px;
+}
+
+#border_type2 {
+  position: absolute;
+  margin-left: -$space-sm;
+  border: 1px solid goldenrod;
+  border-radius: 85% 55% 39% 81% / 60% 91% 44% 73%;
+  height: 200px;
+  width: 200px;
+  z-index: 1;
+}
+
+#image_type2 {
+  background-image: url('https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+  background-position: cover;
+  background-size: cover;
+  border-radius: 85% 55% 39% 81% / 60% 91% 44% 73%;
+  height: 200px;
+  width: 200px;
+}
+
+#border_type3 {
+  position: absolute;
+  margin-left: $space-sm;
+  border: 1px solid lawngreen;
+  border-radius: 59% 41% 55% 45% / 48% 28% 72% 52%;
+  height: 200px;
+  width: 200px;
+}
+#image_type3 {
+  background-image: url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzN8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+  background-position: cover;
+  background-size: cover;
+  border-radius: 59% 41% 55% 45% / 48% 28% 72% 52%;
+  height: 200px;
+  width: 200px;
+}
+
+#border_type4 {
+  position: absolute;
+  margin-left: $space-sm;
+  border: 1px solid mediumslateblue;
+  border-radius: 78% 63% 30% 98% / 18% 94% 26% 73%;
+  height: 200px;
+  width: 200px;
+  z-index: -1;
+}
+#image_type4 {
+  background-image: url('https://images.unsplash.com/photo-1617037448248-6bd7b4a0d038?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGhlYWRzaG90fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+  background-position: cover;
+  background-size: cover;
+  border-radius: 78% 63% 30% 98% / 18% 94% 26% 73%;
+  height: 200px;
+  width: 200px;
+}
+
+.masonry-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -30px;
+  width: 1200px;
+  @include for-phone-only{
+      width: 400px;
+  }
+  @include for-tablet-up{
+      width: 700px;
+  }
+  @include for-desktop-up{
+      width: 900px;
+  }
+  @include for-large-up{
+      width: 1200px;
+  }
+}
+
+.masonry-grid_column {
+  padding-left: 30px;
+  background-clip: padding-box;
+}
+
+.masonry-grid_column > div {
+  margin-bottom: 30px;
+  
+}
+
+// Width for the images inside of TipTap editor
+.ProseMirror {
+  img {
+    width: 500px;
+  }
+}

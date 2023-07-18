@@ -1,0 +1,42 @@
+@import 'app/styles/globals.scss';
+
+.container {
+	color: $textBlack;
+	background-color: $involvedBlue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: $space-xl;
+
+	@include for-phone-only {
+		text-align: center;
+	}
+
+	@include for-tablet-up {
+		text-align: center;
+	}
+
+	@include for-desktop-up {
+		text-align: justify;
+	}
+
+	h3 {
+		color: white;
+		font-weight: bold;
+		font-family: $primaryHeaderFont;
+		padding-bottom: $space-sm;
+	}
+
+	p {
+		color: white;
+		font-family: $primaryTextFont;
+    padding-bottom: $space-md;
+	}
+
+	a {
+		padding: $space-sm $space-xs;
+		color: $textBlack;
+		font-weight: bold;
+		font-family: $linkFont;
+	}
+}

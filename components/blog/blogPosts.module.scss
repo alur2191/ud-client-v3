@@ -1,0 +1,32 @@
+
+@import 'app/styles/globals.scss';
+
+.items {
+	max-width: 1200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: $space-xl clamp($space-unit, 5vw, $space-xl);
+	align-items: center;
+
+	@include for-xlarge-up {
+		margin: $space-xl auto;
+	}
+
+	button {
+		width: 150px;
+		height: 40px;
+		background-color: transparent;
+		color: $udSecondaryOrange;
+		font-weight: 600;
+		border: 2px solid $udSecondaryOrange;
+		border-radius: 5px;
+		margin: 50px 0;
+		cursor: pointer;
+		transition: all 0.3s;
+		&:hover {
+			background-color: $udSecondaryOrange;
+			color: white;
+		}
+	}
+}

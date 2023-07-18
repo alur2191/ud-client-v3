@@ -7,18 +7,33 @@
   },
   "dependencies": {
     "@supabase/auth-helpers-nextjs": "latest",
-    "@supabase/supabase-js": "latest",
+    "@supabase/supabase-js": "^2.26.0",
+    "@tiptap/extension-highlight": "^2.0.3",
+    "@tiptap/extension-image": "^2.0.3",
+    "@tiptap/extension-text-align": "^2.0.3",
+    "@tiptap/extension-typography": "^2.0.3",
+    "@tiptap/pm": "^2.0.3",
+    "@tiptap/react": "^2.0.3",
+    "@tiptap/starter-kit": "^2.0.3",
     "autoprefixer": "10.4.14",
+    "framer-motion": "^10.12.18",
+    "lodash": "^4.17.21",
     "next": "latest",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "react-infinite-scroller": "^1.2.6",
+    "react-masonry-css": "^1.0.16",
+    "sass": "^1.63.6",
     "tailwindcss": "3.3.2",
     "typescript": "5.1.3"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.195",
     "@types/node": "20.3.1",
     "@types/react": "18.2.12",
-    "@types/react-dom": "18.2.5"
+    "@types/react-dom": "18.2.5",
+    "@types/react-infinite-scroller": "^1.2.3"
   }
 }

@@ -1,0 +1,19 @@
+@import 'app/styles/globals.scss';
+
+.container  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: $space-xxl $space-xxl $space-md;
+
+
+    h3 {
+      color: $textBlack;
+      font-family: $primaryHeaderFont;
+    }
+
+    .sortBy {
+      width: 50%;
+      border: 1px solid;
+    }
+  }

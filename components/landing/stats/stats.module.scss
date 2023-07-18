@@ -1,0 +1,38 @@
+@import 'app/styles/globals.scss';
+
+.container {
+	background-color: $statsPink;
+	color: $textBlack;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: $space-lg;
+	margin-top: $space-xl;
+
+	.stat {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: $space-sm 0;
+
+		.icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color: $involvedBlue;
+			background-color: $lightenedBlue;
+			padding: $space-sm;
+			border-radius: 100%;
+		}
+
+		h4 {
+			padding: $space-xs 0;
+			font-family: $secondaryHeaderFont;
+		}
+
+		.subtitle {
+			font-family: $secondaryTextFont;
+			font-size: $subtitle;
+		}
+	}
+}

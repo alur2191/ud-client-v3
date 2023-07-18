@@ -1,0 +1,18 @@
+@import '../styles/globals.scss';
+
+.items {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+}
+
+.items > .item {
+	border: 1px solid black;
+	margin: 0 auto;
+	padding: 48px;
+}
+
+.items > .loader {
+	margin: 0 auto;
+}

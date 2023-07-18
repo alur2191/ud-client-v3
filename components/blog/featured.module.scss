@@ -1,0 +1,85 @@
+@import 'app/styles/globals.scss';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	font-family: $primaryTextFont;
+	color: $textBlack;
+	margin: 0 0 $space-lg;
+
+	@include for-tablet-up {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.post {
+		order: 2;
+		display: flex;
+		flex-direction: column;
+		gap: $space_sm;
+		width: 50%;
+		@include for-phone-only{
+			width: 90%;
+		}
+		@include for-tablet-up {
+			order: unset;
+		}
+
+		h3 {
+			font-family: $primaryHeaderFont;
+			font-weight: bold;
+			margin-bottom: $space-xxs;
+
+			a {
+				text-decoration: none;
+				color: $textBlack;
+			}
+		}
+		p {
+			font-family: $primaryTextFont;
+			color: $subTextBlack;
+			line-height: $space-lg;
+			margin: $space-md 0;
+		}
+
+		.read {
+			color: $textBlack;
+			font-weight: 600;
+			text-decoration: none;
+		}
+
+		.right {
+			display: flex;
+			flex-direction: row;
+			gap: 20px;
+
+			.authorName {
+				font-weight: 600;
+				color: $textBlack;
+				cursor: pointer;
+			}
+
+			.published {
+				font-weight: 400;
+				color: $subTextBlack;
+			}
+		}
+		.readMoreLink {
+			font-weight: 600;
+			color: $textBlack;
+		}
+	}
+
+	.imageContainer {
+		order: 1;
+		margin-bottom: $space-lg;
+
+		.postImage {
+			height: 100%;
+			width: 100%;
+			object-fit: contain;
+		}
+	}
+}
