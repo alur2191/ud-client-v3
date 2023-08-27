@@ -44,7 +44,8 @@ const PostPage = () => {
 			// This assumes you have a `todos` table in Supabase. Check out
 			// the `Create Table and seed with data` section of the README 👇
 			// https://github.com/vercel/next.js/blob/canary/examples/with-supabase/README.md
-			const { data, error } = await supabase.from('posts').select(`*, author ( name )`,).eq('id', id);
+			const { data, error } = await supabase.from('posts').select(`*`,).eq('id', id);
+			
 			if (data && editor) {
 				setUser(data)
 				editor!.commands.setContent(data[0].entry)
@@ -53,9 +54,6 @@ const PostPage = () => {
 
 		getUser()
 	}, [supabase, setUser, editor])
-
-
-
 
 	if (user) {
 		const { id: postId, entry, author: {name}, title: postTitle, created_at, image } = user[0];
